@@ -28,7 +28,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        print()
         
         self.locationManager.delegate = self
         //uygulama açıldığında kullanıcıdan konum bilgisini paylaşmayı isteyecek
@@ -77,7 +77,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     func showWeather (model : CurrentWeatherModel){
-        
         informaitionLbl.text = model.summary
         yuzdeNem.text = model.humidity
         dereceLbl.text = model.temperature
